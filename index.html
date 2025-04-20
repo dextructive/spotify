@@ -1,0 +1,140 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sailor Song - Gigi Perez</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body, html {
+      height: 100%;
+      font-family: 'Arial', sans-serif;
+      color: white;
+      overflow: hidden;
+    }
+    .background-video {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -2;
+      filter: blur(10px) brightness(0.4);
+    }
+    .overlay {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.5);
+      z-index: -1;
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      text-align: center;
+      padding: 20px;
+    }
+    .title {
+      font-size: 2em;
+      margin-bottom: 0.3em;
+    }
+    .artist {
+      font-size: 1.2em;
+      margin-bottom: 1em;
+      opacity: 0.8;
+    }
+    .audio-player {
+      margin-bottom: 1.5em;
+    }
+    .lyrics {
+      max-height: 40%;
+      overflow-y: auto;
+      background: rgba(255,255,255,0.05);
+      padding: 15px;
+      border-radius: 10px;
+      font-size: 1em;
+      white-space: pre-wrap;
+    }
+    ::-webkit-scrollbar {
+      width: 6px;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: rgba(255,255,255,0.2);
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+
+
+  <video class="background-video" autoplay muted loop>
+    <source src="video.mp4" type="video/mp4">
+    Your browser does not support HTML5 video.
+  </video>
+  <div class="overlay"></div>
+
+
+  <div class="container">
+    <div class="title">Sailor Song</div>
+    <div class="artist">Gigi Perez</div>
+    <div class="audio-player">
+      <audio controls>
+        <source src="audio.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+    <div class="lyrics">
+I saw her in the rightest way  
+Looking like Anne Hathaway  
+Laughing while she hit her pen  
+And coughed, and coughed  
+And then, she came up to my knees  
+Begging, baby, would you please?  
+Do the things you said you'd do to me, to me  
+
+
+Oh, won't you kiss me on the mouth and love me like a sailor?  
+And when you get a taste, can you tell me what's my flavor?  
+I don't believe in God, but I believe that you're my savior  
+My mom says that she's worried, but I'm covered in this favor  
+And when we're getting dirty, I forget all that is wrong  
+I sleep so I can see you 'cause I hate to wait so long  
+I sleep so I can see you and I hate to wait so long  
+
+
+She took my fingers to her mouth  
+The kind of thing that makes you proud  
+That nothing else had ever  
+Worked out, worked out  
+And lately, I've tried other things  
+But nothing can capture the sting  
+Of the venom she's gonna spit out right now  
+
+
+Oh, won't you kiss me on the mouth and love me like a sailor?  
+When you get a taste, can you tell me what's my flavor?  
+I don't believe in God, but I believe that you're my savior  
+I know that you've been worried, but you're dripping in my favor  
+And when we're getting dirty, I forget all that is wrong  
+I sleep so I can see you 'cause I hate to wait so long  
+I sleep so that I can see you and I hate to wait so long  
+
+
+And we can run away to the walls inside your house  
+I can be the cat, baby, you can be the mouse  
+And we can laugh off things that we know nothing about  
+We can go forever until you wanna sit it out
+    </div>
+  </div>
+
+
+</body>
+</html>
